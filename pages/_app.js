@@ -3,6 +3,8 @@ import Fonts from '../components/fonts'
 import { AnimatePresence } from 'framer-motion'
 import Chakra from '../components/chakra'
 
+import '../styles/dog.style.css'
+
 const handleToExit = () => (typeof window !== 'undefined') && window.scrollTo({ top: 0 })
 
 if (typeof window !== 'undefined') window.history.scrollRestoration = 'manual'
