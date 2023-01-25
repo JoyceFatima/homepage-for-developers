@@ -1,5 +1,6 @@
 # Joyce Homepage
 
+[https://portifolio-joycefatima.vercel.app/](https://portifolio-joycefatima.vercel.app/)
 
 ![Image thumbnail](./docs/readme.png)
 
@@ -30,6 +31,5 @@ MIT License.
 You can create your own homepage for free without notifying me by forking this project under the following conditions:
 
 - Add a link to [my homepage](https://www.craftz.dog/)
-- Do not use the 3d voxel dog
 
 Check out [LICENSE](./LICENSE) for more detail.
