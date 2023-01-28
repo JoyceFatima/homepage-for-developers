@@ -4,6 +4,7 @@ import Section from '../components/section'
 import { WorkGridItem } from '../components/grid-item'
 
 import thumbHabits from '../public/images/works/thumbHabits.png'
+import thumbFigmaJam from '../public/images/works/thumbFigmaJam.png'
 
 const Works = () => (
   <Layout title="Works">
@@ -20,6 +21,15 @@ const Works = () => (
             thumbnail={thumbHabits}
           >
             The project is for time management and day-to-day usability.
+          </WorkGridItem>
+        </Section>
+        <Section>
+          <WorkGridItem
+            id="figma-jam"
+            title="Figma Jam"
+            thumbnail={thumbFigmaJam}
+          >
+            I used figma-jam as inspiration to create a simpler model using the React flow library to enhance interactive and custom diagrams.
           </WorkGridItem>
         </Section>
       </SimpleGrid>
