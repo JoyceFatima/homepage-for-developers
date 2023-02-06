@@ -24,6 +24,7 @@ import Layout from '../components/layouts/article'
 import Section from '../components/section'
 
 import thumbHabits from '../public/images/works/thumbHabits.png'
+import thumbTodo from '../public/images/works/thumbTodoWeb.png'
 
 const ProfileImage = chakra(Image, {
   shouldForwardProp: prop => ['width', 'height', 'src', 'alt'].includes(prop)
@@ -40,10 +41,8 @@ const Home = () => (
         bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
         css={{ backdropFilter: 'blur(10px)' }}
       >
-        Hello, welcome to my portfolio.
-        <br />
-        Dedicated to frontend development and passionate about solving big
-        challenges.
+        I’m a Software Engineer. I'm always learning. Passionate about creating
+        solutions to real-world problems.
       </Box>
 
       <Box display={{ md: 'flex' }}>
@@ -52,8 +51,8 @@ const Home = () => (
             Joyce de Fátima Costa Santos
           </Heading>
           <p>
-            Junior Frontend engineer (HTML, CSS, JavaScript, TypeScript, React,
-            React Native, Node)
+            Full Stack Engineer (JavaScript, TypeScript, React, React Native,
+            Node)
           </p>
         </Box>
         <Box
@@ -88,9 +87,9 @@ const Home = () => (
           Work
         </Heading>
         <Paragraph>
-          I&apos;ve been a software developer for 1 year, with experience in frontend
-          web, mobile and backend development, working most of my career with
-          JavaScript/TypeScript.
+          I&apos;ve been a software developer for 1 year, with experience in
+          frontend web, mobile and backend development, working most of my
+          career with JavaScript/TypeScript.
         </Paragraph>
         <Box align="center" my={4}>
           <NextLink href="/works" passHref scroll={false}>
@@ -118,6 +117,10 @@ const Home = () => (
           <BioYear>2022</BioYear>
           Frontend Developer at Qodeless - Brasil;
         </BioSection>
+        <BioSection>
+          <BioYear>2023</BioYear>
+          Beginning of studies at Rocketseat
+        </BioSection>
       </Section>
 
       <Section delay={0.3}>
@@ -125,7 +128,7 @@ const Home = () => (
           I ♥
         </Heading>
         <Paragraph>
-          Going out, having fun with friends, spending time with family, games,
+          Going out, spending time with family, having fun with friends, games,
           coding.
         </Paragraph>
       </Section>
@@ -185,11 +188,17 @@ const Home = () => (
         <SimpleGrid columns={[1, 2, 2]} gap={6} mt={2}>
           <Section>
             <WorkGridItem
+              id="todo-list"
+              title="Todo List"
+              thumbnail={thumbTodo}
+            ></WorkGridItem>
+          </Section>
+          <Section>
+            <WorkGridItem
               id="habits"
               title="Habits"
               thumbnail={thumbHabits}
-            >
-            </WorkGridItem>
+            ></WorkGridItem>
           </Section>
         </SimpleGrid>
 

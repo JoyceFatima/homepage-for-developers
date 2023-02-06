@@ -47,6 +47,7 @@ const Work = () => (
       </P>
 
       <UnorderedList ml={4} my={4}>
+        <ListItem>ViteJs</ListItem>
         <ListItem>HTML</ListItem>
         <ListItem>CSS</ListItem>
         <ListItem>Typecript</ListItem>
