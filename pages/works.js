@@ -4,6 +4,8 @@ import Section from '../components/section'
 import { WorkGridItem } from '../components/grid-item'
 
 import thumbHabits from '../public/images/works/thumbHabits.png'
+import thumbTodo from '../public/images/works/thumbTodoWeb.png'
+import thumbFeed from '../public/images/works/thumbIgniteFeedWeb.png'
 import thumbFigmaJam from '../public/images/works/thumbFigmaJam.png'
 
 const Works = () => (
@@ -14,6 +16,24 @@ const Works = () => (
       </Heading>
 
       <SimpleGrid columns={[1, 1, 2]} gap={6}>
+        <Section>
+          <WorkGridItem
+            id="todo-list"
+            title="Todo List"
+            thumbnail={thumbTodo}
+          >
+            Project realized for notes of tasks.
+          </WorkGridItem>
+        </Section>
+        <Section>
+          <WorkGridItem
+            id="ignite-feed"
+            title="Ignite Feed"
+            thumbnail={thumbFeed}
+          >
+            Made to represent a feed.
+          </WorkGridItem>
+        </Section>
         <Section>
           <WorkGridItem
             id="habits"
