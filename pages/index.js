@@ -72,7 +72,7 @@ const Home = () => (
             overflow="hidden"
           >
             <ProfileImage
-              src="/images/Profile.jpeg"
+              src="/images/profile-linkedIn.jfif"
               alt="Profile image"
               borderRadius="full"
               width="100%"
@@ -203,9 +203,9 @@ const Home = () => (
         </SimpleGrid>
 
         <Box align="center" my={4}>
-          <NextLink href="/posts" passHref scroll={false}>
+          <NextLink href="/works" passHref scroll={false}>
             <Button rightIcon={<ChevronRightIcon />} colorScheme="blue">
-              Popular posts
+              Popular works
             </Button>
           </NextLink>
         </Box>
